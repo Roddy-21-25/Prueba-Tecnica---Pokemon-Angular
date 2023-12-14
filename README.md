@@ -8,6 +8,8 @@ Utilizar el service pokeapiservice que consume la api https://pokeapi.co/
 
 Generar equipos aleatorios al refrescar la pagina.
 
+Resuelta ✅
+
 Bonus: Implementar la solucion en Ionic y generar un .apk
 _______________________________________________________________________________________________________________________________________
 
