@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.titleBox {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #ef2523, #fd615d);
+    margin: 0;
+    padding: 20px;
+}
+
+.fotterBox {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.footer-ancor {
+    text-decoration: none;
+    color: #fd615d;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #ef2523;
+    }
+}
+
+.pokemonTeam {
+    text-align: center;
+    margin-top: 34px;
+
+    &-loop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; // Ahora centramos las columnas
+    }
+
+    &-box {
+        width: calc(25% - 20px); // El 20px representa el espacio entre las columnas
+        margin-bottom: 20px; // Puedes ajustar el espacio entre las filas según tus necesidades
+
+        @media (max-width: 767px) {
+            width: 100%; // Cambia a una columna en pantallas pequeñas
+        }
+    }
+
+    &-row {
+        border: 1px solid #ddd; // Añade un borde para separar visualmente las cajas
+        border-radius: 12px;
+        padding: 10px;
+        margin: 10px;
+
+        background-color: white; // color del contenedor de la img.
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Añade una sombra
+        transition: box-shadow 0.3s ease; // Agrega transición para suavizar el efecto al pasar el ratón
+
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .pokemonTeam-box-pokeball {
+        width: 25px; // ancho del contenedor de la pokeball
+
+        .pokemonTeam-pokeball {
+            width: 100%; // para que ocupe todo el contenedor
+            height: auto;
+        }
+    }
+
+    .pokemonTeam-img {
+        background-color: #ffd0ce63;
+        border-radius: 24px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    &-img {
+        display: flex; // Añade display flex
+        align-items: center; // Centra verticalmente
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto; // Centra horizontalmente
+        }
+    }
+
+    &-name {
+
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize; // Capitaliza la primera letra
+        margin-top: 10px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,41 @@
+// Define variables comunes
+$type-padding: 5px;
+$type-padding-horizontal: 20px;
+$type-border-radius: 24px;
+$font-family: Arial, Helvetica, sans-serif;
+$type-font-weight: bold;
+
+// Estilos para diferentes tipos
+.fire-type {
+    background-color: orangered;
+}
+
+.water-type {
+    background-color: rgb(0, 128, 255);
+}
+
+.electric-type {
+    background-color: #ffe683;
+}
+
+.rock-type {
+    background-color: brown;
+}
+
+%type-styles {
+    color: white;
+    padding: $type-padding;
+    padding-left: $type-padding-horizontal;
+    padding-right: $type-padding-horizontal;
+    border-radius: $type-border-radius;
+    margin: $type-padding;
+    font-family: $font-family;
+    font-weight: $type-font-weight;
+}
+
+.fire-type,
+.water-type,
+.electric-type,
+.rock-type {
+    @extend %type-styles;
+}

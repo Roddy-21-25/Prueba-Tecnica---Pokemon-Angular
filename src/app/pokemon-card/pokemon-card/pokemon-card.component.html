@@ -1,0 +1,41 @@
+<div class="titleBox">
+  <h1 class="title">Pokemon Team</h1>
+</div>
+<section class="pokemonTeam">
+  <div class="pokemonTeam-loop">
+    <div class="pokemonTeam-box" *ngFor="let pokemon of pokemonListTeam">
+      <div class="pokemonTeam-row">
+        <div class="pokemonTeam-box-pokeball">
+          <img
+            class="pokemonTeam-pokeball"
+            src="/assets/pokeball.png"
+            alt="Pokeball"
+          />
+        </div>
+        <div class="pokemonTeam-img">
+          <img src="{{ pokemon.sprite_url }}" alt="{{ pokemon.name }}" />
+        </div>
+        <div class="pokemonTeam-box-name">
+          <p class="pokemonTeam-name">
+            <span>{{ pokemon.name }}</span>
+          </p>
+          <p class="pokemonTeam-type">
+            <span [ngClass]="getTypeClass(pokemon.type)">{{
+              pokemon.type
+            }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="fotterBox">
+  <h1 class="footer-text">
+    <a
+      class="footer-ancor"
+      href="https://www.linkedin.com/in/roddy-2125-rafael/"
+      target="_blank"
+      >Created by: Roddy R. Tejeda Rosario</a
+    >
+  </h1>
+</div>
